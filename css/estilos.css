@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.pre-header {
+    background-color: #1CD1B0;
+    height: 38px;
+    font-size: 15px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #00669F;
+    height: 101px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.card-1, .card-2, .card-3 {
+    display: inline-block;
+    width: 300px;
+    position: relative;
+}
+
+.card-imagen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 194px;
+    border-radius: 20px 20px 0 0;
+}
+.card-texto {
+    background-color: #F3F3F3;
+    height: 336px;
+}
+.card-1 .card-imagen {
+    background-image: url(../img/baticueva.png);
+}
+
+.card-2 .card-imagen {
+    background-image: url(../img/colores.png);
+}
+
+.card-3 .card-imagen {
+    background-image: url(../img/baticueva.png);
+}
+
+.ver-mas {
+    background-color: #00669F;
+    position: absolute;
+    bottom: 18px;
+    right: calc(50% - 64px);
+    width: 128px;
+    height: 48px;
+}
