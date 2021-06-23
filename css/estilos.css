@@ -1,11 +1,13 @@
+/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 @font-face {
     font-family: 'Comic Book';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/comic_book/Comic Book.otf');
+    src: url('../fontsComic Book.otf');
   }
+
+/* Propiedades generales */
 * {
     box-sizing: border-box;
     margin:0;
@@ -21,21 +23,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*--- Header ----------------------*/
 .pre-header {
     background-color: #1CD1B0;
-    height: 38px;
     font-size: 15px;
+    height: 38px;
     padding: 10px;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    background-color: #00669F;
-    height: 101px;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.24);
-    z-index: 99;
     background: #00669F url(../img/background.png) repeat;
+    height: 101px;
+    position: sticky;
+    top: -1px;
+    z-index: 99;
 }
 
 header h1 {
@@ -45,42 +47,51 @@ header h1 {
     padding: 10px 60px;
 }
 
+/*--- Main ------------------------------------ */
+
+/* Seccion Lista Heroes */
 .lista-heroes {
     padding: 150px 15px;
 }
 
-
-.card-1, .card-2, .card-3 {
-    display: inline-block;
-    width: 300px;
-    position: relative;
-    margin: 15px;
+/* Cards */
+.card{
+    border-radius: 20px 20px 0 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    width: 300px;
+}
+
+/* Contenedor del fondo del personaje */
+.card-imagen {
+    height: 194px;
+    position: relative;
+}
+
+/* Imagen de fondo del personaje */
+.card-imagen img {
     border-radius: 20px 20px 0 0;
 }
 
-.card-imagen {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 194px;
-    border-radius: 20px 20px 0 0;
-    position: relative;
-}
+/* Contenedor texto */
 .card-texto {
     background-color: #F3F3F3;
     height: 336px;
     position: relative;
-
 }
 
+/* Titulo de la card (nombre del heroe) */
 .card-texto h2 {
-    font-size: 27px;
     color: #000;
+    font-family: 'Comic Book', sans-serif;
+    font-size: 27px;
     padding: 75px 64px 10px;
     text-align: center;
-    font-family: 'Comic Book', sans-serif;
 }
 
+/* Parrafo de la card */
 .card-texto p
 {
     font-size: 16px;
@@ -88,54 +99,45 @@ header h1 {
     padding: 0 17px;
     text-align: justify;
 }
-.heroe {
-    position: absolute;
-    top: -60px;
-    left: calc(50% - 60px);
+
+/* Retrato del Heroe */
+.img-heroe {
     border-radius: 50%;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    left: calc(50% - 60px);
+    position: absolute;
+    top: -60px;
 }
 
+/* Corazon */
 .fav {
     position: absolute;
-    top: 20px;
     left: 20px;
+    top: 20px;
 }
 
-.card-1 .card-imagen {
-    background-image: url(../img/baticueva.png);
-}
-
-.card-2 .card-imagen {
-    background-image: url(../img/colores.png);
-}
-
-.card-3 .card-imagen {
-    background-image: url(../img/fortress-of-solitude.png);
-}
-
-/* a {
-    display: inline-block
-    padding: 10px}
-     */
+/* Boton Ver mas */
 .ver-mas {
     background-color: #00669F;
-    position: absolute;
-    display: inline-block;
     bottom: 18px;
-    right: calc(50% - 64px);
-    width: 128px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
     color:#F3F3F3;
-    text-align: center;
+    display: inline-block;
     font-size: 15px;
-    vertical-align: middle;
     line-height: 48px;
+    position: absolute;
+    right: calc(50% - 64px);
+    text-align: center;
+    vertical-align: middle;
+    width: 128px;
 }
+
+/*--- Footer ---------------------------------------------*/
 
 footer {
     background-color: #00669F;
-    font-size: 16px;
     color: #FFF9F9;
     height: 51px;
+    font-size: 16px;
     padding: 16px;
 }
