@@ -24,7 +24,7 @@ body {
 }
 
 /*--- Header ----------------------*/
-.pre-header {
+.header-top {
     background-color: #1CD1B0;
     font-size: 15px;
     height: 38px;
@@ -34,9 +34,9 @@ body {
 header {
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.24);
     background: #00669F url(../img/background.png) repeat;
-    height: 101px;
+    height: 140px;
     position: sticky;
-    top: -1px;
+    top: -39px;
     z-index: 99;
 }
 
