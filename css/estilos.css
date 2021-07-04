@@ -107,7 +107,7 @@ background-image: url(../img/back-wonder.png);
     color: #000;
     font-family: 'Comic Book', sans-serif;
     font-size: 1.7rem;
-    padding: 10px;
+    padding: 1rem 0.5rem;
     text-align: center;
 }
 
@@ -117,7 +117,7 @@ background-image: url(../img/back-wonder.png);
     font-size: 16px;
     color: #333333;
     /* padding: 0 17px; */
-    text-align: justify;
+    text-align: center;
 }
 
 /* Retrato del Heroe */
