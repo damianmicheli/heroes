@@ -51,35 +51,55 @@ header h1 {
 
 /* Seccion Lista Heroes */
 .lista-heroes {
-    padding: 150px 15px;
+    padding: 50px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+
 }
 
 /* Cards */
 .card{
     border-radius: 20px 20px 0 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
-    display: inline-block;
-    margin: 15px;
     position: relative;
     width: 300px;
+    background-color: #F3F3F3;
+
 }
 
 /* Contenedor del fondo del personaje */
 .card-imagen {
-    height: 194px;
-    position: relative;
-}
-
-/* Imagen de fondo del personaje */
-.card-imagen img {
+    height: 12rem;
     border-radius: 20px 20px 0 0;
 }
 
+/* Imagen de fondo del personaje */
+
+
+.card-imagen.batman {
+background-image: url(../img/back-batman.png);
+}
+
+.card-imagen.harley {
+background-image: url(../img/back-harley.png);
+}
+
+.card-imagen.superman {
+background-image: url(../img/back-superman.png);
+}
+
+.card-imagen.wonder {
+background-image: url(../img/back-wonder.png);
+}
+
+
+
 /* Contenedor texto */
 .card-texto {
-    background-color: #F3F3F3;
-    height: 336px;
     position: relative;
+    padding: 4rem 1.5rem 6rem;
 }
 
 /* Titulo de la card (nombre del heroe) */
@@ -87,7 +107,7 @@ header h1 {
     color: #000;
     font-family: 'Comic Book', sans-serif;
     font-size: 27px;
-    padding: 75px 64px 10px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -96,7 +116,7 @@ header h1 {
 {
     font-size: 16px;
     color: #333333;
-    padding: 0 17px;
+    /* padding: 0 17px; */
     text-align: justify;
 }
 
@@ -107,6 +127,7 @@ header h1 {
     left: calc(50% - 60px);
     position: absolute;
     top: -60px;
+    width: 7.5rem;
 }
 
 /* Corazon */
@@ -119,17 +140,15 @@ header h1 {
 /* Boton Ver mas */
 .ver-mas {
     background-color: #00669F;
-    bottom: 18px;
+    bottom: 1.2rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
     color:#F3F3F3;
     display: inline-block;
-    font-size: 15px;
-    line-height: 48px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
     position: absolute;
     right: calc(50% - 64px);
-    text-align: center;
-    vertical-align: middle;
-    width: 128px;
+    border-radius: 5px;
 }
 
 /*--- Footer ---------------------------------------------*/
