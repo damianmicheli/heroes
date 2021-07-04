@@ -8,6 +8,9 @@
   }
 
 /* Propiedades generales */
+
+
+
 * {
     box-sizing: border-box;
     margin:0;
@@ -151,6 +154,13 @@ background-image: url(../img/back-wonder.png);
     border-radius: 5px;
 }
 
+.ver-mas:hover {
+    font-weight: bold;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.24);
+    bottom: 1.3rem;
+    background-color: #0082ce;
+    }
+
 /* Boton mas */
 .boton-mas {
     display: none;
@@ -191,6 +201,8 @@ footer>a>img {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
 
 }
+
+
 
 .card-imagen.harley {
     background-image: url(../img/back-harley-tablet.png);
