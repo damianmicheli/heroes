@@ -55,8 +55,7 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 10px;
-
+    gap: 1.5rem;
 }
 
 /* Cards */
@@ -73,6 +72,7 @@ header h1 {
 .card-imagen {
     height: 12rem;
     border-radius: 20px 20px 0 0;
+    background-size: cover;
 }
 
 /* Imagen de fondo del personaje */
@@ -106,7 +106,7 @@ background-image: url(../img/back-wonder.png);
 .card-texto h2 {
     color: #000;
     font-family: 'Comic Book', sans-serif;
-    font-size: 27px;
+    font-size: 1.7rem;
     padding: 10px;
     text-align: center;
 }
@@ -151,6 +151,12 @@ background-image: url(../img/back-wonder.png);
     border-radius: 5px;
 }
 
+/* Boton mas */
+.boton-mas {
+    display: none;
+}
+
+
 /*--- Footer ---------------------------------------------*/
 
 footer {
@@ -159,4 +165,35 @@ footer {
     height: 51px;
     font-size: 16px;
     padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>a>img {
+    height: 20px;
+}
+
+@media screen and (max-width:768px){
+
+.boton-mas {
+    display: initial;
+    background-color: #00669F;
+    color: #FFF9F9;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    position: fixed;
+    top: 50vh;
+    padding-top: 0.18rem;
+    right: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24);
+
+}
+
+.card-imagen.harley {
+    background-image: url(../img/back-harley-tablet.png);
+    }
+
 }

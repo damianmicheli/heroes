@@ -71,7 +71,11 @@
                     </a>
                 </div>
                 <div class="card-texto">
-                    <img class="img-heroe" src="img/superman.png" alt="Superman">
+                    <picture>
+                        <source srcset="img/superman-mobile.png" media="(max-width: 480px)">
+                        <img class="img-heroe" src="img/superman.png" alt="Superman">
+                    </picture>
+
                     <h2>Superman</h2>
                     <p>Es un superhéroe que apareció por primera vez en los cómics estadounidenses publicados por DC
                         Comics. ​
@@ -91,7 +95,10 @@
                     </a>
                 </div>
                 <div class="card-texto">
-                    <img class="img-heroe" src="img/harley.png" alt="Harley Quinn">
+                    <picture>
+                        <source srcset="img/harley-tablet.png" media="(max-width: 768px)">
+                        <img class="img-heroe" src="img/harley.png" alt="Harley Quinn">
+                    </picture>
                     <h2>Harley Quinn</h2>
                     <p>Harley Quinn es un personaje ficticio creado por los estadounidenses Paul Dini y Bruce Timm para
                         la editorial DC Comics. Quinn hizo su debut en el vigésimo-segundo episodio de Batman: la serie
@@ -105,12 +112,16 @@
 
   
         </section>
+        <div class="boton-mas">
+            <p>+</p>
+        </div>
     </main>
 
     <!-- FOOTER -->
 
     <footer>
         <p>Todos los derechos reservados a FRONT END 1</p>
+        <a href="https://github.com/damianmicheli"><img src="img/github.svg" alt="Github"></a>
     </footer>
 
 </body>
