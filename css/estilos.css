@@ -196,4 +196,8 @@ footer>a>img {
     background-image: url(../img/back-harley-tablet.png);
     }
 
+.card-imagen.batman {
+    background-image: url(../img/back-batman-tablet.png);
+    }
+
 }
